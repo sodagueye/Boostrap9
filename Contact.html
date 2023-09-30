@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="Ecommerce.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="#Accueil">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Notre Shopping</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 mx-auto text-center fs-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Ecommerce.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="listeProduit.html">Liste des produit</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                <button type="button" class="btn  recherche ">
+                    <i class="fa-solid fa-search"></i>
+                </button> 
+              </form>
+              <li class="nav-item">
+                <a class="nav-link "><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+              
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link btn m-2" href="#">Connexion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn" href="#">Inscription </a>
+              </li>
+
+            
+          </div>
+        </div>
+      </nav>
+    <!-- end of navbar -->
+
+<!-- contact -->
+<section class=" pt-5">
+    <div class="container">
+        <img src="images/contact.jpg" alt="" class="contact d-flex justify-content-center m-auto">
+   </div>
+
+</section>
+<section class="formulaire pt-5">
+    <div class="container">
+        <div class="row bodure d-flex align-items-center">
+            <div class="col-md-6 col-sm-12">
+                <form>
+                   
+                     <div class="mb-3">
+                      
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="nom">
+                      </div>
+                      <div class="mb-3">
+                  
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="prenom">
+                      </div>
+                      <div class="mb-3">
+                       
+                        <input type="number" id="disabledTextInput" class="form-control" placeholder="telephone">
+                      </div>
+                      <div class="mb-3">
+                        
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="email">
+                      </div>
+                      </form>
+
+            </div>
+            <div class="col-md-6 col-sm-12 align-items-center">
+                <textarea name="" id="" cols="60" rows="6" placeholder="Message"></textarea>
+                <button type="submit" class="btn submit ">Submit</button>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+   
+    <section class="footer pt-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class=" d-block">
+                        <i class="fa-solid fa-cart-shopping"></i> 
+                        <h4 class="">CONTACTEZ-NOUS</h4>
+                       <p> <i class="fa-solid fa-phone"></i><span class="m-2">782623868</span></p>
+                       <p><i class="fa-solid fa-location-dot"> <span class=" m-2">Yeumbeul Villa N:120</span></i></p>
+                          <p> <i class="fa-solid fa-envelope"><span class="m-2">gueyesoda56@gmail.com</span>
+                          </i></p>
+                               
+
+                  </div>
+                    
+
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class=" d-block">
+                       <h4 class="">A PROPOS DE NOUS</h4>
+                       <p>Qui de nous</p>
+                       <p>condition</p>
+                        <p>evenement</p>
+                        <p>Temoignage</p>
+
+                               
+
+                  </div>
+                    
+
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class=" d-block">
+                       <h4 class="">PAIEMENT DISPONIBLE</h4>
+                       <img src="images/wave.jpg" alt="" class="img-fluid paie">
+                       <img src="images/orange.png" alt= "" class="img-fluid  paie">
+
+                       
+                        <img src="images/fee-money.png" alt="" class="img-fluid paie">                       
+
+                               
+
+                  </div>
+                    
+
+                </div>
+            </div>
+        </div>
+
+</section>
+    
+
+    
+                
+                
+                  
+                    
+
+            
+            
+            
+            
+                
+            
+               
+               
+        
+          
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+ integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    
+</body>
+</html>
