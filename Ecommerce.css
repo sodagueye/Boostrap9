@@ -20,8 +20,103 @@ body{
     box-shadow:  3px 9px 3px #e5345b;
     /* rgba(0, 0,0, 0.1) ; */
 } 
+/* connexion */
+.connexion{
+    list-style: none;
+    border-radius: 50px;
+    border: 1px solid #e5345b ;
+    background-color:#e5345b ;
+    color: white;
+   
+}
+.form_bg{
+    background: linear-gradient(to bottom ,#e5345b , #f7a4b6);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.form_horizontal{
+    text-align: center;
+}
+.form_horizontal .form_icon{
+    color: #fff;
+    font-size: 100px;
+    line-height: 85px;
+    margin:0 0 13px ;
+
+}
+.form_horizontal .titre{
+    color: #fff;
+    font-size: 23px;
+    font-weight: 700px;
+    text-transform: 1px;
+    text-transform: uppercase;
+    margin: 0 0 35px 0;
+
+}
+.form_horizontal .form-group{
+    margin:  0 0 10px; 
+    position: relative;
+    
+   
 
 
+}
+.form_horizontal .input-icon{
+    position: absolute;
+    left: 15px; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    color: #777;
+    
+}
+.form_horizontal .form-control{
+    color: #555;
+    background-color: #fff;
+    font-size:13px ;
+    letter-spacing: 1px;
+    height: 37px;
+    padding: 2px 15px 2px 35px;
+    border-radius: 50px;
+}
+.form_horizontal .form-control::placeholder{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+  text-transform: capitalize;
+}
+.form_horizontal .signin{
+    color: #fff;
+    background-color: #222;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    width: 100%;
+    margin: 0 0 15px 0;
+    border-radius:20px;
+    text-transform: uppercase;
+    text-decoration: none; 
+}
+.form_horizontal .form-options li {
+    list-style: none;
+
+}
+.form_horizontal .form-options  a{
+    
+    color: #fff;
+    letter-spacing: 0.5;
+    margin: 0 0 10px;
+    display: block;
+   text-decoration: none;
+
+}
+.form_horizontal .form-options  li a i{
+    font-size: 10px;
+
+
+}
+/* end connexion */
 
 #Accueil{
     background: url('./images/ecommerce.jpg');
@@ -29,6 +124,7 @@ body{
     background-repeat: no-repeat;
     height: 500px;
     background-position: center;
+   
 }
 
 .shop{
@@ -126,6 +222,7 @@ body{
 }
 .special-img img{
     transition: all 0.3s ease;
+    transition-timing-function: ease;
 }
 .special-img:hover img{
     transform: scale(1.2);
