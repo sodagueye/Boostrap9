@@ -6,9 +6,14 @@ body{
     font-family: var(--sm-font);
 
 }
+
  .recherche .fa-search{
     position:relative;
     right:  50px;  
+
+}
+.nav-link:hover{
+    color: #e5345b;
 
 }
 /* button */
@@ -20,6 +25,12 @@ body{
     box-shadow:  3px 9px 3px #e5345b;
     /* rgba(0, 0,0, 0.1) ; */
 } 
+/* logo */
+.shopping{
+    height: 80px;
+    width: 150px;
+    background-color:rgb(243, 237, 237) ;
+}
 /* connexion */
 .connexion{
     list-style: none;
@@ -122,7 +133,7 @@ body{
     background: url('./images/ecommerce.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 600px;
     background-position: center;
    
 }
@@ -264,6 +275,7 @@ body{
 }
 .footer{
     background-color: rgb(243, 237, 237);
+    height: 500px;
 }
 .paie{
     width: 40px;
@@ -294,9 +306,69 @@ textarea{
     border-radius: 25px;
     
 }
+.fa-brands{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+}
+hr{
+    width: 100%;
+    border: 1px solid gray;
+}
+/* modal */
+.fa-plus{
+    position: relative;
+    bottom: 180px;
+    justify-content: center;
+    align-items: center;
+}
+.modal-body{
+    float: left;
+}
+.modal-dialog{
+    width: 70%;
+}
+.trait{
+    border: 1px solid gray;
+    width: 680px;
+
+}
+.taille{
+    border: 1px solid black ;
+    padding: 10px;
+}
+.panier{
+    width: 500px;
+    background-color: #e5345b;
+    color: white;
+
+}
+.fermer{
+    border-color: #e5345b;
+    border-radius: 50px;
+}
+.fermer:hover{
+    background-color: #e5345b;
+    color: white;
+}
+.plus{
+    text-decoration: none;
+    color: black;
+}
+.plus:hover{
+    color: white;
+}
 /* media queries */
 @media(min-width:992px){
     .nav-item{
         border-bottom: none;
+    }
+    
+}
+@media(max-width:768px){
+
+    .footer{
+       
+        height: 700px;
     }
 }

@@ -19,11 +19,10 @@
     
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="#Accueil">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span>Notre Shopping</span>
+            <img src="images/notrechop.PNG" alt="" class="img-fluid shopping">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,7 +30,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  mb-2 mb-lg-0 mx-auto text-center fs-5">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Ecommerce.html">Accueil</a>
+                <a class="nav-link " href="Ecommerce.html">Accueil</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="listeProduit.html">Liste des produit</a>
@@ -76,13 +75,67 @@
                 <h2 class="position-relative d-inline-block">Liste des produits</h2>
 
             </div>
-            <div class="row">
+            <div class="row text-center">
                
                 <div class="collection-list mt-4 row d-flex justify-content-center gx-0 gy-3">
                     <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
-                        <img src="images/top_rated_1 (1).jpg" alt="" class="w-100">
-                        <span class="position-absolute">sale</span>
+                        <img src="images/top_rated_1 (1).jpg" alt="" class="w-100" id="">
+                        <!-- modal -->
+                        <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> -->
+    <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/top_rated_1 (1).jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">Chemise blanche Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 45000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -106,7 +159,83 @@
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
                         <img src="images/top_rated_2.jpg" alt="" class="w-100">
-                        <span class="position-absolute">sale</span>
+                        <!-- <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" 
+                        data-bs-target="#exampleModal1"></i>
+                        <!-- </button> -->
+                        
+                        <!-- Modal -->
+                        <!-- <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body d-flex justify-content-start align-items-start ">
+                                  <img src="images/top_rated_2.jpg" alt="" class="w-25">
+                                
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div> -->
+                        <!-- </div> --> -->
+
+
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/top_rated_2.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">Motre original Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 20000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -131,7 +260,59 @@
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
                         <img src="images/top_rated_3.jpg" alt="" class="w-100">
-                        <span class="position-absolute">sale</span>
+
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/top_rated_3.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">Pill rouge Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 45000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -154,7 +335,61 @@
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
                         <img src="images/on_sale_1.jpg" alt="" class="w-100">
-                        <span class="position-absolute">sale</span>
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/on_sale_1.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">Sac cuir  bleu clair Vintage à Paillettes pour femme</p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 15000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+
+
+
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -179,7 +414,58 @@
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
                         <img src="images/on_sale_2.jpg" alt="" class="w-100">
-                        <span class="position-absolute">sale</span>
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/on_sale_2.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">Chemise blanche Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 45000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -204,7 +490,58 @@
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
                         <img src="images/top_rated_3.jpg" alt="" class="w-100">
-                        <span class="position-absolute">sale</span>
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/top_rated_3.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">Chemise blanche Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 45000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -229,7 +566,59 @@
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
                         <img src="images/on_sale_3.jpg" alt="" class="w-100">
-                        <span class="position-absolute">sale</span>
+
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/on_sale_3.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">chaussure noir Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 10000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -254,7 +643,59 @@
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
                         <img src="images/best_selling_1.jpg" alt="" class="w-100">
-                        <span class="position-absolute">sale</span>
+
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/best_selling_1.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">veste costime Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 45000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -279,7 +720,59 @@
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
                         <img src="images/best_selling_2.jpg" alt="" class="w-100">
-                        <span class="position-absolute">sale</span>
+
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal8"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/best_selling_2.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">Chemise blanche Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 45000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -304,7 +797,59 @@
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
                         <img src="images/best_selling_3.jpg" alt="" class="w-100">
-                        <span class="position-absolute">sale</span>
+
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal9"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/best_selling_3.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">Chemise blanche Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 45000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -328,8 +873,60 @@
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
-                        <img src="images/special_product_1.jpg" alt="" class="img-fluid under">
-                        <span class="position-absolute">sale</span>
+                        <img src="images/special_product_1.jpg" alt="" class="img-fluid w-100">
+
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal10"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/special_product_1.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">Chemise blanche Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 45000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -353,8 +950,59 @@
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
-                        <img src="images/special_product_2.jpg" alt="" class="img-fluid under">
-                        <span class="position-absolute">sale</span>
+                        <img src="images/special_product_2.jpg" alt="" class="img-fluid w-100">
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal11"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/special_product_2.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">Chemise blanche Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 45000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -379,8 +1027,59 @@
 
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
-                        <img src="images/special_product_4.jpg" alt="" class="img-fluid under">
-                        <span class="position-absolute">sale</span>
+                        <img src="images/special_product_4.jpg" alt="" class="img-fluid w-100">
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal12"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/special_product_4.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">Chemise blanche Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 45000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -404,8 +1103,59 @@
             </div>
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
-                        <img src="images/special_product_1.jpg" alt="" class="img-fluid under">
-                        <span class="position-absolute">sale</span>
+                        <img src="images/special_product_1.jpg" alt="" class="img-fluid w-100">
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal13"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/special_product_1.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">Chemise blanche Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 45000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -429,8 +1179,59 @@
             </div>
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
-                        <img src="images/special_product_3.jpg" alt="" class="img-fluid under">
-                        <span class="position-absolute">sale</span>
+                        <img src="images/special_product_3.jpg" alt="" class="img-fluid 100">
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal14"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal14" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/special_product_3.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">Chemise blanche Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 45000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -454,8 +1255,59 @@
             </div>
                 <div class="col-md-6 col-lg-4 col-xl-3 p-2">
                     <div class="collection-img position-relative">
-                        <img src="images/special_product_2.jpg" alt="" class="img-fluid under">
-                        <span class="position-absolute">sale</span>
+                        <img src="images/special_product_2.jpg" alt="" class="img-fluid w-100">
+                        <i class="fa-solid fa-plus" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal15"></i>
+  <!-- </button> -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal15" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center m-auto align-items-center" id="exampleModalLabel">Detail produit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-start align-items-start">
+           
+            <img src="images/special_product_2.jpg" alt="" class="w-25">
+            <div class="d-block">
+            <p class="">Chemise blanche Vintage à Paillettes pour Homme </p>
+            
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+        <p class="fw-5 fs-4"> 45000FCFA</p>
+        
+       <div class="trait"></div> 
+       <p class="fs-6"><i class="fa-solid fa-motorcycle m-3 fs-4"></i>Livraison chaque jour partout au senegal .
+        🇫🇷 Garantie entreprise Senegalaise</p>
+        <p>TAILLE</p>
+        <div class="d-flex m-2 text-center m-auto justify-content-center align-items-center">
+            <p class="taille m-2">L</p>
+            <p class="taille m-2">XL</p>
+            <p class="taille m-2">XXL</p>
+            <p class="taille m-2">XXXL</p>
+            <p class="taille m-2">4XLL</p>
+        </div>
+        <a href="#" class="btn mt-3 add panier  fs-4">Ajouter au panier</a>
+    </div>
+    
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn fermer" data-bs-dismiss="modal">Fermer</button>
+          <button type="button" class="btn fermer"> <a href="listeProduit.html" class="plus">plus de produit</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        <!-- fin -->
+                        <span class="position-absolute">vente</span>
 
                     </div>
                     <div class="text-center">
@@ -492,45 +1344,42 @@
                         <i class="fa-solid fa-cart-shopping"></i> 
                         <h4 class="">CONTACTEZ-NOUS</h4>
                        <p> <i class="fa-solid fa-phone"></i><span class="m-2">782623868</span></p>
-                       <p><i class="fa-solid fa-location-dot"> <span class=" m-2">Yeumbeul Villa N:120</span></i></p>
-                          <p> <i class="fa-solid fa-envelope"><span class="m-2">gueyesoda56@gmail.com</span>
-                          </i></p>
-                               
-
-                  </div>
-                    
-
+                       <p><i class="fa-solid fa-location-dot"> </i><span class=" m-2">Yeumbeul Villa N:120</span></p>
+                          <p> <i class="fa-solid fa-envelope"></i><span class="m-2">gueyesoda56@gmail.com</span></p>
+                    </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class=" d-block">
+                    <div class=" d-block text-center">
                        <h4 class="">A PROPOS DE NOUS</h4>
-                       <p>Qui de nous</p>
-                       <p>condition</p>
-                        <p>evenement</p>
-                        <p>Temoignage</p>
+                       <p class="">Qui de nous</p>
+                       <p class="">condition</p>
+                        <p class="">evenement</p>
+                        <p class="">Temoignage</p>
 
-                               
-
-                  </div>
-                    
-
+                    </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class=" d-block">
                        <h4 class="">PAIEMENT DISPONIBLE</h4>
                        <img src="images/wave.jpg" alt="" class="img-fluid paie">
                        <img src="images/orange.png" alt= "" class="img-fluid  paie">
-
-                       
-                        <img src="images/fee-money.png" alt="" class="img-fluid paie">                       
-
-                               
-
-                  </div>
-                    
-
+                       <img src="images/fee-money.png" alt="" class="img-fluid paie">                       
+                    </div>
                 </div>
             </div>
+            <div class="suivez">
+                <h2 class="text-center m-2">Suivez nous</h2>
+                <div class="nous m-2 text-center">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+    
+                </div>
+    
+            </div>
+            <hr>
+            <p class="text-center fs-6 text-muted">Copyright © 2023 Realised By soda gueye</p>
         </div>
 
 </section>
