@@ -408,9 +408,13 @@ hr{
     }
     .submit{
         width: 350px;
+        align-items: center;
+        justify-content: center;
     }
     textarea{
         width:350px ;
+        justify-content: center;
+        align-items: center;
     }
     
 }
