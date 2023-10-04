@@ -406,5 +406,11 @@ hr{
     .panier {
         width: 300px;
     }
+    .submit{
+        width: 350px;
+    }
+    textarea{
+        width:350px ;
+    }
     
 }
