@@ -358,12 +358,30 @@ hr{
 .plus:hover{
     color: white;
 }
+.fa-plus{
+    color: #e5345b;
+    font-size: 20px;
+}
 /* media queries */
 @media(min-width:992px){
     .nav-item{
         border-bottom: none;
     }
     
+    
+}
+@media(max-width:992px){
+    .panier {
+        width: 300px;
+    }
+    .trait{
+        width: 450px;
+        text-align: center;
+    }
+    .fa-plus{
+        bottom: 200px;
+    }
+
 }
 @media(max-width:768px){
 
@@ -375,4 +393,18 @@ hr{
         
         height: 1050px;
     }
+   .modal-dialog{
+        width: 100%;
+    } 
+    .modal-body{
+        flex-direction: column;
+    }
+    img .rated{
+        width: 400px;
+       
+    }
+    .panier {
+        width: 300px;
+    }
+    
 }
